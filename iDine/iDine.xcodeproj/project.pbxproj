@@ -39,6 +39,7 @@
 		CB7079E92BB612D30011B77E /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
 		CB7079EB2BB621080011B77E /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		CB7079ED2BB623D30011B77E /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
+		CB7079F02BB653C30011B77E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +84,7 @@
 				CB7079D92BB4CAB90011B77E /* menu.json */,
 				CB7079DB2BB4CAB90011B77E /* Menu.swift */,
 				CB7079DC2BB4CAB90011B77E /* Order.swift */,
+				CB7079F02BB653C30011B77E /* README.md */,
 				CB7079CF2BB4CA890011B77E /* Assets.xcassets */,
 				CB7079D12BB4CA890011B77E /* Preview Content */,
 			);
