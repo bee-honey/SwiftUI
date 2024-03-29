@@ -1,0 +1,106 @@
+# macOS file system
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Xcode
+##
+# Xcode
+##
+DerivedData/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata/
+*.xccheckout
+*.moved-aside
+*.xcscmblueprint
+*.xcuserstate
+
+# Xcode build output
+build/
+Build/
+*.o
+*.LinkFileList
+*.hmap
+*.gcno
+*.gcda
+*.gcov
+*.plist
+*.d
+*.tbd
+*.log
+*.xcactivitylog
+*.swiftdoc
+*.swiftmodule
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Xcode project files
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/
+!*.xcodeproj/xcshareddata/*.{xcschemes,xcworkspacedata}
+!*.xcodeproj/xcuserdata/[your_username].xcuserdatad/xcschemes/*
+*.xcworkspace/*
+!*.xcworkspace/contents.xcworkspacedata
+!*.xcworkspace/xcshareddata/
+!*.xcworkspace/xcuserdata/[your_username].xcuserdatad/UserInterfaceState.xcuserstate
+
+# CocoaPods
+Pods/
+Podfile.lock
+
+# Carthage
+Carthage/Build
+
+# Swift Package Manager
+.build/
+Packages/
+Package.resolved
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+
+# Environment variables
+.env*
+
+# Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+# JetBrains Rider
+.idea/
+
+# User-specific files
+*.moved-aside
+*.xcuserstate
+
