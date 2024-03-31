@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     @StateObject private var viewModel = ContentViewModel()
-    
+    @State private var showErrorAlert = false
     var body: some View {
         NavigationStack {
             List {
@@ -17,6 +17,20 @@ struct ContentView: View {
                     CoinRowView(coin: coin)
                 }
             }
+            .refreshable {
+                viewModel.handleRefresh()
+            }
+            .onReceive(viewModel.$error, perform: { error in
+                if error != nil {
+                    showErrorAlert.toggle()
+                }
+            })
+            .alert("Error", isPresented: $showErrorAlert, actions: {
+                //Add any buttons here
+            }, message: {
+                Text(viewModel.error?.localizedDescription ?? "")
+            })
+            
             .navigationTitle("Live Prices")
         }
     }

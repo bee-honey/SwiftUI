@@ -20,36 +20,33 @@ class ContentViewModel: ObservableObject {
     init() {
         loadData()
     }
+    
+    func handleRefresh() {
+        coins.removeAll()
+        loadData()
+    }
 }
 // MARK: Async/Await
 
 extension ContentViewModel {
     @MainActor
     func fetchCoinsWithAsync() async throws {
-//        do {
+        do {
             guard let url = URL(string: urlString) else { throw CoinError.invalidURL}
             
             let (data, response) = try await URLSession.shared.data(from: url)
             guard (response as? HTTPURLResponse)?.statusCode == 200 else {throw CoinError.serverError}
             guard let coins = try? JSONDecoder().decode([Coin].self, from: data) else {throw CoinError.invalidData}
-            print(coins)
             self.coins = coins
-//        } catch {
-//            self.error = error
-//        }
+        } catch {
+            //The error variable available in the catch block represents whichever error was thrown from the do block
+            self.error = error
+        }
     }
-    
-//    func fetchError() async throws {
-//        let url = URL(string: "https://nkk.com")!
-//        
-//        let (data, response) = try await URLSession.shared.data(from: url)
-//    }
     
     func loadData() {
         Task(priority: .medium) {
             try await fetchCoinsWithAsync()
-//            print("Trying to call the fetch error")
-//            try await fetchError()
         }
     }
 }
