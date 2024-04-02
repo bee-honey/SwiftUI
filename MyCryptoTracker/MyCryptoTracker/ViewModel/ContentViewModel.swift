@@ -65,7 +65,7 @@ extension ContentViewModel {
             guard let self = self else { return }
             
             DispatchQueue.main.async {
-                if let error = error {
+                if let error {
                     print("DEBUG: Error \(error)")
                     return
                 }
@@ -75,7 +75,7 @@ extension ContentViewModel {
                     return
                 }
                 
-                guard let data = data else {
+                guard let data else {
                     print("DEBUG: Invalid Data")
                     return
                 }
