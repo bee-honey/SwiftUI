@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "name": "Naveen",
+        "email": "keerthy.naveen@gmail.com",
+        "phone_number": "0174356916",
+        "image_url": "https://avatars.githubusercontent.com/u/1?v=4"
+    },
+    {
+        "id": 2,
+        "name": "Kumar",
+        "email": "1@gmail.com",
+        "phone_number": "1174356916",
+        "image_url": "https://avatars.githubusercontent.com/u/2?v=4"
+    },
+    {
+        "id": 3,
+        "name": "Keerthy",
+        "email": "2@gmail.com",
+        "phone_number": "2174356916",
+        "image_url": "https://avatars.githubusercontent.com/u/3?v=4"
+    },
+    {
+        "id": 4,
+        "name": "Nav",
+        "email": "3@gmail.com",
+        "phone_number": "3174356916",
+        "image_url": "https://avatars.githubusercontent.com/u/4?v=4"
+    }
+]
