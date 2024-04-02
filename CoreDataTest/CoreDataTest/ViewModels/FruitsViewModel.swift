@@ -13,8 +13,8 @@ class FruitsViewModel : ObservableObject {
     let container: NSPersistentContainer
     @Published var savedEntities: [FruitEntity] = []
     
-    init() {
-        container = NSPersistentContainer(name: "FruitsContainer")
+    init(container: NSPersistentContainer = NSPersistentContainer(name: "FruitsContainer")) {
+        self.container = container
         container.loadPersistentStores { (description, error) in
             if let error {
                 print("Error loading core data \(error)")

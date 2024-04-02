@@ -6,31 +6,47 @@
 //
 
 import XCTest
+import CoreData
 @testable import CoreDataTest
 
+class MockPersistentContainer: NSPersistentContainer {
+    override init(name: String, managedObjectModel model: NSManagedObjectModel) {
+        super.init(name: name, managedObjectModel: model)
+        self.persistentStoreDescriptions.first?.url = URL(fileURLWithPath: "/dev/null")
+    }
+}
+
 final class CoreDataTestTests: XCTestCase {
+    
+    var sut: FruitsViewModel!
+    var mockPersistentContainer: NSPersistentContainer!
 
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        super.setUp()
+        let modelURL = Bundle(for: type(of: self)).url(forResource: "FruitsViewModel", withExtension: "xcdatamodeld")!
+        let mom = NSManagedObjectModel(contentsOf: modelURL)!
+        mockPersistentContainer = MockPersistentContainer(name: "TestContainer", managedObjectModel: mom)
+                
+        sut = FruitsViewModel(container: mockPersistentContainer)
     }
 
     override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        sut = nil
+        mockPersistentContainer = nil
+        super.tearDown()
     }
 
     func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+        let fruitName = "Apple"
+        sut.addFruits(fruitName: fruitName)
+        
+        // Fetch fruits to validate
+        let request = NSFetchRequest<FruitEntity>(entityName: "FruitEntity")
+        let results = try! mockPersistentContainer.viewContext.fetch(request)
+        
+        XCTAssertEqual(results.count, 1)
+        XCTAssertEqual(results.first?.name, fruitName)
     }
 
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
 
 }
