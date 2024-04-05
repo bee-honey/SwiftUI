@@ -23,7 +23,7 @@ struct ContentView: View {
                     .padding(.horizontal)
                 
                 Button {
-                    guard !textFieldText.isEmpty else {return}
+//                    guard !textFieldText.isEmpty else {return}
                     vm.addFruits(fruitName: textFieldText)
                     textFieldText = ""
                 } label: {
@@ -35,6 +35,7 @@ struct ContentView: View {
                         .background(Color.accentColor)
                         .clipShape(RoundedRectangle(cornerRadius: 10))
                 }
+                .disabled(textFieldText.isEmpty)
                 .padding(.horizontal)
                 
                 List {

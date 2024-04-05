@@ -1,0 +1,480 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CB6B36E82BBF6BE100409C15 /* SpotiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6B36E72BBF6BE100409C15 /* SpotiApp.swift */; };
+		CB6B36EA2BBF6BE100409C15 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6B36E92BBF6BE100409C15 /* ContentView.swift */; };
+		CB6B36EC2BBF6BE200409C15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB6B36EB2BBF6BE200409C15 /* Assets.xcassets */; };
+		CB6B36EF2BBF6BE200409C15 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB6B36EE2BBF6BE200409C15 /* Preview Assets.xcassets */; };
+		CB6B36F62BBF6C0300409C15 /* DatabaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6B36F52BBF6C0300409C15 /* DatabaseHelper.swift */; };
+		CB6B36F92BBF6CD300409C15 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = CB6B36F82BBF6CD300409C15 /* SDWebImageSwiftUI */; };
+		CB6B36FB2BBF6CFC00409C15 /* ImageLoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6B36FA2BBF6CFC00409C15 /* ImageLoaderView.swift */; };
+		CB6B36FD2BBF6D7E00409C15 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6B36FC2BBF6D7E00409C15 /* Constants.swift */; };
+		CB6B37002BBF757000409C15 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6B36FF2BBF757000409C15 /* Product.swift */; };
+		CB6B37022BBF757F00409C15 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6B37012BBF757F00409C15 /* User.swift */; };
+		CB6B37052BBF77B400409C15 /* SwiftfulRouting in Frameworks */ = {isa = PBXBuildFile; productRef = CB6B37042BBF77B400409C15 /* SwiftfulRouting */; };
+		CB6B37082BBF77F900409C15 /* SwiftfulUI in Frameworks */ = {isa = PBXBuildFile; productRef = CB6B37072BBF77F900409C15 /* SwiftfulUI */; };
+		CB6B370D2BBFB59B00409C15 /* SpotiHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6B370C2BBFB59B00409C15 /* SpotiHomeView.swift */; };
+		CB6B37102BBFB7FC00409C15 /* SpotiCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6B370F2BBFB7FC00409C15 /* SpotiCategoryCell.swift */; };
+		CB6B37132BBFCF6000409C15 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6B37122BBFCF6000409C15 /* Category.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CB6B36E42BBF6BE100409C15 /* Spoti.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spoti.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB6B36E72BBF6BE100409C15 /* SpotiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotiApp.swift; sourceTree = "<group>"; };
+		CB6B36E92BBF6BE100409C15 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CB6B36EB2BBF6BE200409C15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CB6B36EE2BBF6BE200409C15 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CB6B36F52BBF6C0300409C15 /* DatabaseHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseHelper.swift; sourceTree = "<group>"; };
+		CB6B36FA2BBF6CFC00409C15 /* ImageLoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoaderView.swift; sourceTree = "<group>"; };
+		CB6B36FC2BBF6D7E00409C15 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CB6B36FF2BBF757000409C15 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		CB6B37012BBF757F00409C15 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		CB6B370C2BBFB59B00409C15 /* SpotiHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotiHomeView.swift; sourceTree = "<group>"; };
+		CB6B370F2BBFB7FC00409C15 /* SpotiCategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotiCategoryCell.swift; sourceTree = "<group>"; };
+		CB6B37122BBFCF6000409C15 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CB6B36E12BBF6BE100409C15 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB6B37082BBF77F900409C15 /* SwiftfulUI in Frameworks */,
+				CB6B36F92BBF6CD300409C15 /* SDWebImageSwiftUI in Frameworks */,
+				CB6B37052BBF77B400409C15 /* SwiftfulRouting in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CB6B36DB2BBF6BE100409C15 = {
+			isa = PBXGroup;
+			children = (
+				CB6B36E62BBF6BE100409C15 /* Spoti */,
+				CB6B36E52BBF6BE100409C15 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CB6B36E52BBF6BE100409C15 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CB6B36E42BBF6BE100409C15 /* Spoti.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CB6B36E62BBF6BE100409C15 /* Spoti */ = {
+			isa = PBXGroup;
+			children = (
+				CB6B37112BBFCF5500409C15 /* Models */,
+				CB6B370B2BBFB54A00409C15 /* Core */,
+				CB6B370A2BBFB54000409C15 /* Components */,
+				CB6B37092BBFB52E00409C15 /* App */,
+				CB6B36E72BBF6BE100409C15 /* SpotiApp.swift */,
+				CB6B36E92BBF6BE100409C15 /* ContentView.swift */,
+				CB6B36FE2BBF6F8C00409C15 /* Shared */,
+				CB6B36EB2BBF6BE200409C15 /* Assets.xcassets */,
+				CB6B36ED2BBF6BE200409C15 /* Preview Content */,
+			);
+			path = Spoti;
+			sourceTree = "<group>";
+		};
+		CB6B36ED2BBF6BE200409C15 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CB6B36EE2BBF6BE200409C15 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CB6B36FE2BBF6F8C00409C15 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				CB6B36FA2BBF6CFC00409C15 /* ImageLoaderView.swift */,
+				CB6B36F52BBF6C0300409C15 /* DatabaseHelper.swift */,
+				CB6B36FF2BBF757000409C15 /* Product.swift */,
+				CB6B36FC2BBF6D7E00409C15 /* Constants.swift */,
+				CB6B37012BBF757F00409C15 /* User.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		CB6B37092BBFB52E00409C15 /* App */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		CB6B370A2BBFB54000409C15 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				CB6B370F2BBFB7FC00409C15 /* SpotiCategoryCell.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		CB6B370B2BBFB54A00409C15 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				CB6B370C2BBFB59B00409C15 /* SpotiHomeView.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		CB6B37112BBFCF5500409C15 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CB6B37122BBFCF6000409C15 /* Category.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CB6B36E32BBF6BE100409C15 /* Spoti */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB6B36F22BBF6BE200409C15 /* Build configuration list for PBXNativeTarget "Spoti" */;
+			buildPhases = (
+				CB6B36E02BBF6BE100409C15 /* Sources */,
+				CB6B36E12BBF6BE100409C15 /* Frameworks */,
+				CB6B36E22BBF6BE100409C15 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Spoti;
+			packageProductDependencies = (
+				CB6B36F82BBF6CD300409C15 /* SDWebImageSwiftUI */,
+				CB6B37042BBF77B400409C15 /* SwiftfulRouting */,
+				CB6B37072BBF77F900409C15 /* SwiftfulUI */,
+			);
+			productName = Spoti;
+			productReference = CB6B36E42BBF6BE100409C15 /* Spoti.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CB6B36DC2BBF6BE100409C15 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					CB6B36E32BBF6BE100409C15 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = CB6B36DF2BBF6BE100409C15 /* Build configuration list for PBXProject "Spoti" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CB6B36DB2BBF6BE100409C15;
+			packageReferences = (
+				CB6B36F72BBF6CD300409C15 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				CB6B37032BBF77B400409C15 /* XCRemoteSwiftPackageReference "SwiftfulRouting" */,
+				CB6B37062BBF77F900409C15 /* XCRemoteSwiftPackageReference "SwiftfulUI" */,
+			);
+			productRefGroup = CB6B36E52BBF6BE100409C15 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CB6B36E32BBF6BE100409C15 /* Spoti */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CB6B36E22BBF6BE100409C15 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB6B36EF2BBF6BE200409C15 /* Preview Assets.xcassets in Resources */,
+				CB6B36EC2BBF6BE200409C15 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CB6B36E02BBF6BE100409C15 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB6B36FD2BBF6D7E00409C15 /* Constants.swift in Sources */,
+				CB6B37132BBFCF6000409C15 /* Category.swift in Sources */,
+				CB6B370D2BBFB59B00409C15 /* SpotiHomeView.swift in Sources */,
+				CB6B36EA2BBF6BE100409C15 /* ContentView.swift in Sources */,
+				CB6B36FB2BBF6CFC00409C15 /* ImageLoaderView.swift in Sources */,
+				CB6B36F62BBF6C0300409C15 /* DatabaseHelper.swift in Sources */,
+				CB6B36E82BBF6BE100409C15 /* SpotiApp.swift in Sources */,
+				CB6B37002BBF757000409C15 /* Product.swift in Sources */,
+				CB6B37102BBFB7FC00409C15 /* SpotiCategoryCell.swift in Sources */,
+				CB6B37022BBF757F00409C15 /* User.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CB6B36F02BBF6BE200409C15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CB6B36F12BBF6BE200409C15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CB6B36F32BBF6BE200409C15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Spoti/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nakeer.Spoti;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CB6B36F42BBF6BE200409C15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Spoti/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nakeer.Spoti;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CB6B36DF2BBF6BE100409C15 /* Build configuration list for PBXProject "Spoti" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB6B36F02BBF6BE200409C15 /* Debug */,
+				CB6B36F12BBF6BE200409C15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB6B36F22BBF6BE200409C15 /* Build configuration list for PBXNativeTarget "Spoti" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB6B36F32BBF6BE200409C15 /* Debug */,
+				CB6B36F42BBF6BE200409C15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CB6B36F72BBF6CD300409C15 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.2;
+			};
+		};
+		CB6B37032BBF77B400409C15 /* XCRemoteSwiftPackageReference "SwiftfulRouting" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftfulThinking/SwiftfulRouting.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.3.2;
+			};
+		};
+		CB6B37062BBF77F900409C15 /* XCRemoteSwiftPackageReference "SwiftfulUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftfulThinking/SwiftfulUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CB6B36F82BBF6CD300409C15 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CB6B36F72BBF6CD300409C15 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+		CB6B37042BBF77B400409C15 /* SwiftfulRouting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CB6B37032BBF77B400409C15 /* XCRemoteSwiftPackageReference "SwiftfulRouting" */;
+			productName = SwiftfulRouting;
+		};
+		CB6B37072BBF77F900409C15 /* SwiftfulUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CB6B37062BBF77F900409C15 /* XCRemoteSwiftPackageReference "SwiftfulUI" */;
+			productName = SwiftfulUI;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = CB6B36DC2BBF6BE100409C15 /* Project object */;
+}
